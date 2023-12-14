@@ -46,6 +46,7 @@ exports[`should render shopping list 1`] = `
             "borderWidth": 3,
             "flexDirection": "row",
             "marginBottom": 3,
+            "width": "100%",
           }
         }
       >
@@ -137,6 +138,7 @@ exports[`should render shopping list 1`] = `
             "borderWidth": 3,
             "flexDirection": "row",
             "marginBottom": 3,
+            "width": "100%",
           }
         }
       >
@@ -144,6 +146,7 @@ exports[`should render shopping list 1`] = `
           style={
             {
               "fontSize": 15,
+              "minWidth": "33%",
               "padding": 10,
             }
           }
@@ -154,12 +157,55 @@ exports[`should render shopping list 1`] = `
           style={
             {
               "fontSize": 15,
+              "minWidth": "33%",
               "padding": 10,
             }
           }
         >
           1
         </Text>
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": undefined,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            {
+              "flexShrink": 1,
+              "justifyContent": "center",
+              "opacity": 1,
+              "paddingLeft": 10,
+              "textAlign": "right",
+            }
+          }
+        >
+          <Text>
+            Remove
+          </Text>
+        </View>
       </View>
     </View>
     <View
@@ -175,6 +221,7 @@ exports[`should render shopping list 1`] = `
             "borderWidth": 3,
             "flexDirection": "row",
             "marginBottom": 3,
+            "width": "100%",
           }
         }
       >
@@ -182,6 +229,7 @@ exports[`should render shopping list 1`] = `
           style={
             {
               "fontSize": 15,
+              "minWidth": "33%",
               "padding": 10,
             }
           }
@@ -192,12 +240,55 @@ exports[`should render shopping list 1`] = `
           style={
             {
               "fontSize": 15,
+              "minWidth": "33%",
               "padding": 10,
             }
           }
         >
           2
         </Text>
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": undefined,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            {
+              "flexShrink": 1,
+              "justifyContent": "center",
+              "opacity": 1,
+              "paddingLeft": 10,
+              "textAlign": "right",
+            }
+          }
+        >
+          <Text>
+            Remove
+          </Text>
+        </View>
       </View>
     </View>
   </View>

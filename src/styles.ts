@@ -19,10 +19,12 @@ export const styles = StyleSheet.create({
     borderWidth: 3,
     borderRadius: 30,
     marginBottom: 3,
+    width: '100%',
   },
   shoppingListItemText: {
     padding: 10,
     fontSize: 15,
+    minWidth: '33%',
   },
   shoppingListItemInput: {
     margin: 5,
@@ -37,5 +39,11 @@ export const styles = StyleSheet.create({
     textAlign: 'right',
     justifyContent: 'center',
     paddingLeft: 10,
+  },
+  removeText: {
+    textAlign: 'right',
+    justifyContent: 'center',
+    paddingLeft: 10,
+    flexShrink: 1,
   },
 });

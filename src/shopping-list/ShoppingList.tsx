@@ -1,5 +1,5 @@
 import React, {useCallback, useState} from 'react';
-import {FlatList, FlatListProps} from 'react-native';
+import {FlatList, FlatListProps, ListRenderItemInfo} from 'react-native';
 import {ShoppingListItem} from './ShoppingListItem';
 import {GroceryItem} from '../groceries/GroceryItem';
 import {AddShoppingListItem} from './AddShoppingListItem';
@@ -18,15 +18,31 @@ export const ShoppingList = ({
       setGroceryItems(items => [...items, groceryItem]),
     [setGroceryItems],
   );
+  const removeGroceryItem = useCallback(
+    (groceryItem: GroceryItem) => () =>
+      setGroceryItems(items =>
+        items.filter(item => item.id !== groceryItem.id),
+      ),
+    [setGroceryItems],
+  );
   const ListHeaderCooponent = useCallback(
     () => <AddShoppingListItem addGroceryItem={addGroceryItem} />,
     [addGroceryItem],
+  );
+  const renderItem = useCallback(
+    ({item}: ListRenderItemInfo<GroceryItem>) => (
+      <ShoppingListItem
+        item={item}
+        removeGroceryItem={removeGroceryItem(item)}
+      />
+    ),
+    [removeGroceryItem],
   );
 
   return (
     <FlatList
       data={groceryItems}
-      renderItem={ShoppingListItem}
+      renderItem={renderItem}
       keyExtractor={keyExtractor}
       ListHeaderComponent={ListHeaderCooponent}
     />

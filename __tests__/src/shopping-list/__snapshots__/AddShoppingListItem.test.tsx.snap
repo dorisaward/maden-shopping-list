@@ -9,6 +9,7 @@ exports[`should render add shopping list item 1`] = `
       "borderWidth": 3,
       "flexDirection": "row",
       "marginBottom": 3,
+      "width": "100%",
     }
   }
 >

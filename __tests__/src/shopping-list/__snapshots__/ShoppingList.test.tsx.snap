@@ -2,6 +2,7 @@
 
 exports[`should render shopping list 1`] = `
 <RCTScrollView
+  ListHeaderComponent={[Function]}
   data={
     [
       {
@@ -33,6 +34,96 @@ exports[`should render shopping list 1`] = `
   viewabilityConfigCallbackPairs={[]}
 >
   <View>
+    <View
+      collapsable={false}
+      onLayout={[Function]}
+    >
+      <View
+        style={
+          {
+            "borderColor": "#6495ed",
+            "borderRadius": 30,
+            "borderWidth": 3,
+            "flexDirection": "row",
+            "marginBottom": 3,
+          }
+        }
+      >
+        <TextInput
+          onChangeText={[Function]}
+          placeholder="Name"
+          style={
+            {
+              "borderColor": "grey",
+              "borderRadius": 30,
+              "borderWidth": 1,
+              "margin": 5,
+              "minWidth": "33%",
+              "paddingHorizontal": 5,
+              "paddingVertical": 0,
+            }
+          }
+        />
+        <TextInput
+          keyboardType="number-pad"
+          onChangeText={[Function]}
+          placeholder="Quantity"
+          style={
+            {
+              "borderColor": "grey",
+              "borderRadius": 30,
+              "borderWidth": 1,
+              "margin": 5,
+              "minWidth": "33%",
+              "paddingHorizontal": 5,
+              "paddingVertical": 0,
+            }
+          }
+          value="0"
+        />
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": undefined,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            {
+              "justifyContent": "center",
+              "opacity": 1,
+              "paddingLeft": 10,
+              "textAlign": "right",
+            }
+          }
+        >
+          <Text>
+            Save
+          </Text>
+        </View>
+      </View>
+    </View>
     <View
       onFocusCapture={[Function]}
       onLayout={[Function]}

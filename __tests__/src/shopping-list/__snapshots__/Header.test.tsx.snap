@@ -5,6 +5,7 @@ exports[`should render header 1`] = `
   style={
     {
       "backgroundColor": "cream",
+      "padding": 10,
     }
   }
 >

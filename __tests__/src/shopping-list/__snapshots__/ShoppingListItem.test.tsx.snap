@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render shopping list item 1`] = `
+<View
+  style={
+    {
+      "borderColor": "#6495ed",
+      "borderRadius": 30,
+      "borderWidth": 3,
+      "flexDirection": "row",
+      "marginBottom": 3,
+    }
+  }
+>
+  <Text
+    style={
+      {
+        "fontSize": 15,
+        "padding": 10,
+      }
+    }
+  >
+    test name
+  </Text>
+  <Text
+    style={
+      {
+        "fontSize": 15,
+        "padding": 10,
+      }
+    }
+  >
+    100
+  </Text>
+</View>
+`;

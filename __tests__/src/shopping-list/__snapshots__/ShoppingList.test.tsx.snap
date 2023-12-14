@@ -1,0 +1,114 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render shopping list 1`] = `
+<RCTScrollView
+  data={
+    [
+      {
+        "id": "test-id-0",
+        "name": "test name 0",
+        "quantity": 1,
+      },
+      {
+        "id": "test-id-1",
+        "name": "test name 1",
+        "quantity": 2,
+      },
+    ]
+  }
+  getItem={[Function]}
+  getItemCount={[Function]}
+  keyExtractor={[Function]}
+  onContentSizeChange={[Function]}
+  onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={false}
+  renderItem={[Function]}
+  scrollEventThrottle={0.0001}
+  stickyHeaderIndices={[]}
+  viewabilityConfigCallbackPairs={[]}
+>
+  <View>
+    <View
+      onFocusCapture={[Function]}
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        style={
+          {
+            "borderColor": "#6495ed",
+            "borderRadius": 30,
+            "borderWidth": 3,
+            "flexDirection": "row",
+            "marginBottom": 3,
+          }
+        }
+      >
+        <Text
+          style={
+            {
+              "fontSize": 15,
+              "padding": 10,
+            }
+          }
+        >
+          test name 0
+        </Text>
+        <Text
+          style={
+            {
+              "fontSize": 15,
+              "padding": 10,
+            }
+          }
+        >
+          1
+        </Text>
+      </View>
+    </View>
+    <View
+      onFocusCapture={[Function]}
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        style={
+          {
+            "borderColor": "#6495ed",
+            "borderRadius": 30,
+            "borderWidth": 3,
+            "flexDirection": "row",
+            "marginBottom": 3,
+          }
+        }
+      >
+        <Text
+          style={
+            {
+              "fontSize": 15,
+              "padding": 10,
+            }
+          }
+        >
+          test name 1
+        </Text>
+        <Text
+          style={
+            {
+              "fontSize": 15,
+              "padding": 10,
+            }
+          }
+        >
+          2
+        </Text>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;

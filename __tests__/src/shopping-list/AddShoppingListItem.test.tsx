@@ -27,7 +27,11 @@ it('should call add grocery item', () => {
   fireEvent(getByPlaceholderText('Name'), 'onChangeText', groceryName);
 
   const groceryQuantity = 3;
-  fireEvent(getByPlaceholderText('Quantity'), 'onChangeText', groceryQuantity.toString());
+  fireEvent(
+    getByPlaceholderText('Quantity'),
+    'onChangeText',
+    groceryQuantity.toString(),
+  );
 
   // When
   fireEvent.press(getByText('Save'));

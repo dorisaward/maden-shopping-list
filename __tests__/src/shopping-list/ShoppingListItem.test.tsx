@@ -1,7 +1,7 @@
 import 'react-native';
 import React from 'react';
 import {it, expect} from '@jest/globals';
-import renderer from 'react-test-renderer';
+import {render} from '@testing-library/react-native';
 import {ShoppingListItem} from '../../../src/shopping-list/ShoppingListItem';
 import {GroceryItem} from '../../../src/groceries/GroceryItem';
 import {ListRenderItemInfo} from 'react-native';
@@ -16,7 +16,7 @@ it('should render shopping list item', () => {
   const renderable = <ShoppingListItem {...otherProps} item={item} index={0} />;
 
   // When
-  const {toJSON} = renderer.create(renderable);
+  const {toJSON} = render(renderable);
 
   // Then
   expect(toJSON()).toMatchSnapshot();

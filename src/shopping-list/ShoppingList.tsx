@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import {FlatList, FlatListProps} from 'react-native';
 import {ShoppingListItem} from './ShoppingListItem';
 import {GroceryItem} from '../groceries/GroceryItem';
@@ -10,7 +10,8 @@ type Props = {
 export const ShoppingList = ({
   initialGroceryItems,
 }: Props): React.JSX.Element => {
-const [groceryItems, setGroceryItems] = useState<GroceryItem[]>(initialGroceryItems)
+  const [groceryItems, setGroceryItems] =
+    useState<GroceryItem[]>(initialGroceryItems);
 
   return (
     <FlatList

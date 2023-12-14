@@ -1,7 +1,7 @@
 import 'react-native';
 import React from 'react';
 import {it, expect} from '@jest/globals';
-import renderer from 'react-test-renderer';
+import {render} from '@testing-library/react-native';
 import {Header} from '../../../src/shopping-list/header';
 
 it('should render header', () => {
@@ -9,7 +9,7 @@ it('should render header', () => {
   const renderable = <Header />;
 
   // When
-  const {toJSON} = renderer.create(renderable);
+  const {toJSON} = render(renderable);
 
   // Then
   expect(toJSON()).toMatchSnapshot();

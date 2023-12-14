@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render header 1`] = `
+<View
+  style={
+    {
+      "backgroundColor": "cream",
+    }
+  }
+>
+  <Text
+    style={
+      {
+        "color": "black",
+        "fontSize": 30,
+        "textAlign": "center",
+      }
+    }
+  >
+    Mayden Shopping List
+  </Text>
+</View>
+`;

@@ -9,12 +9,15 @@ import React from 'react';
 import {SafeAreaView} from 'react-native';
 
 import {styles} from './src/styles';
-import {Header} from './src/shopping-list/header';
+import {Header} from './src/shopping-list/Header';
+import {ShoppingList} from './src/shopping-list/ShoppingList';
+import {groceries} from './src/groceries/groceries';
 
 function App(): React.JSX.Element {
   return (
     <SafeAreaView style={styles.background}>
-      <Header />
+      <Header/>
+      <ShoppingList groceryItems={groceries} />
     </SafeAreaView>
   );
 }

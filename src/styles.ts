@@ -24,4 +24,18 @@ export const styles = StyleSheet.create({
     padding: 10,
     fontSize: 15,
   },
+  shoppingListItemInput: {
+    margin: 5,
+    paddingVertical: 0,
+    paddingHorizontal: 5,
+    minWidth: '33%',
+    borderColor: 'grey',
+    borderWidth: 1,
+    borderRadius: 30,
+  },
+  saveText: {
+    textAlign: 'right',
+    justifyContent: 'center',
+    paddingLeft: 10,
+  },
 });

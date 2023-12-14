@@ -16,8 +16,8 @@ import {groceries} from './src/groceries/groceries';
 function App(): React.JSX.Element {
   return (
     <SafeAreaView style={styles.background}>
-      <Header/>
-      <ShoppingList groceryItems={groceries} />
+      <Header />
+      <ShoppingList initialGroceryItems={groceries} />
     </SafeAreaView>
   );
 }

@@ -17,7 +17,7 @@ it('should render shopping list', () => {
     name: 'test name 1',
     quantity: 2,
   };
-  const renderable = <ShoppingList groceryItems={[item0, item1]} />;
+  const renderable = <ShoppingList initialGroceryItems={[item0, item1]} />;
 
   // When
   const {toJSON} = renderer.create(renderable);

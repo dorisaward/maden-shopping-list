@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render, given false 1`] = `
+<View
+  style={
+    {
+      "borderColor": "black",
+      "borderWidth": 1,
+      "height": 20,
+      "marginHorizontal": 15,
+      "marginVertical": 10,
+      "width": 20,
+    }
+  }
+  testID="tickbox"
+/>
+`;
+
+exports[`should render, given true 1`] = `
+<View
+  style={
+    {
+      "borderColor": "black",
+      "borderWidth": 1,
+      "height": 20,
+      "marginHorizontal": 15,
+      "marginVertical": 10,
+      "width": 20,
+    }
+  }
+  testID="tickbox"
+>
+  <View
+    style={
+      {
+        "backgroundColor": "black",
+        "height": 16,
+        "left": 12,
+        "position": "absolute",
+        "top": 0,
+        "transform": "rotate(45deg)",
+        "width": 1,
+      }
+    }
+  />
+  <View
+    style={
+      {
+        "backgroundColor": "black",
+        "height": 8,
+        "left": 4,
+        "position": "absolute",
+        "top": 8,
+        "transform": "rotate(315deg)",
+        "width": 1,
+      }
+    }
+  />
+</View>
+`;

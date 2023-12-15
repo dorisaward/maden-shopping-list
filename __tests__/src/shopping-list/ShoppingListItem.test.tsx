@@ -1,15 +1,18 @@
 import 'react-native';
 import React from 'react';
+import Realm from 'realm';
 import {it, expect} from '@jest/globals';
 import {fireEvent, render} from '@testing-library/react-native';
 import {ShoppingListItem} from '../../../src/shopping-list/ShoppingListItem';
 import {GroceryItem} from '../../../src/groceries/GroceryItem';
 import {ListRenderItemInfo} from 'react-native';
 
+jest.mock('realm')
+
 it('should render shopping list item', () => {
   // Given
   const item: GroceryItem = {
-    id: 'test-id',
+    _id: new Realm.BSON.ObjectId(),
     name: 'test name',
     quantity: 100,
   };
@@ -31,7 +34,7 @@ it('should render shopping list item', () => {
 it('should render shopping list item, given ticked', () => {
   // Given
   const item: GroceryItem = {
-    id: 'test-id',
+    _id: new Realm.BSON.ObjectId(),
     name: 'test name',
     quantity: 100,
   };
@@ -54,7 +57,7 @@ it('should render shopping list item, given ticked', () => {
 it('should remove shopping list item', () => {
   // Given
   const item: GroceryItem = {
-    id: 'test-id',
+    _id: new Realm.BSON.ObjectId(),
     name: 'test name',
     quantity: 100,
   };

@@ -10,18 +10,15 @@ import {SafeAreaView} from 'react-native';
 import {styles} from './src/styles';
 import {Header} from './src/shopping-list/Header';
 import {ShoppingList} from './src/shopping-list/ShoppingList';
-import {groceries} from './src/groceries/groceries';
-import {createRealmContext} from '@realm/react';
+import {RealmProvider} from '@realm/react';
 import {realmConfig} from './src/realmConfig';
 
 function App(): React.JSX.Element {
-  const {RealmProvider} = createRealmContext(realmConfig);
-
   return (
-    <RealmProvider>
+    <RealmProvider {...realmConfig}>
       <SafeAreaView style={styles.background}>
         <Header />
-        <ShoppingList initialGroceryItems={groceries} />
+        <ShoppingList />
       </SafeAreaView>
     </RealmProvider>
   );

@@ -6,12 +6,12 @@ exports[`should render shopping list 1`] = `
   data={
     [
       {
-        "id": "test-id-0",
+        "_id": "test-id-0",
         "name": "test name 0",
         "quantity": 1,
       },
       {
-        "id": "test-id-1",
+        "_id": "test-id-1",
         "name": "test name 1",
         "quantity": 2,
       },

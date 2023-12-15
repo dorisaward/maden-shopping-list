@@ -2,7 +2,7 @@ export type GroceryItem = {
   /**
    * Unique identifier for the grocery item
    */
-  id: string;
+  _id: Realm.BSON.ObjectId;
 
   /**
    * The human readable name for the grocery item

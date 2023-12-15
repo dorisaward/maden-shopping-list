@@ -21,6 +21,14 @@ export const styles = StyleSheet.create({
     marginBottom: 3,
     width: '100%',
   },
+  shoppingListItemTicked: {
+    flexDirection: 'row',
+    borderColor: 'grey',
+    borderWidth: 3,
+    borderRadius: 30,
+    marginBottom: 3,
+    width: '100%',
+  },
   shoppingListItemText: {
     padding: 10,
     fontSize: 15,

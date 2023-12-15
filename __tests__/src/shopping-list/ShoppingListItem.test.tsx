@@ -28,6 +28,29 @@ it('should render shopping list item', () => {
   expect(toJSON()).toMatchSnapshot();
 });
 
+it('should render shopping list item, given ticked', () => {
+  // Given
+  const item: GroceryItem = {
+    id: 'test-id',
+    name: 'test name',
+    quantity: 100,
+  };
+  const renderable = (
+    <ShoppingListItem
+      {...otherProps}
+      item={item}
+      removeGroceryItem={jest.fn()}
+    />
+  );
+  const {getByTestId, toJSON} = render(renderable);
+
+  // When
+  fireEvent.press(getByTestId('tickbox'));
+
+  // Then
+  expect(toJSON()).toMatchSnapshot();
+});
+
 it('should remove shopping list item', () => {
   // Given
   const item: GroceryItem = {

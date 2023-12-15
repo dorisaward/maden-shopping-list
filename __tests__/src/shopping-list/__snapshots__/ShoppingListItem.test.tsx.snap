@@ -13,6 +13,209 @@ exports[`should render shopping list item 1`] = `
     }
   }
 >
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      {
+        "opacity": 1,
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "borderColor": "black",
+          "borderWidth": 1,
+          "height": 20,
+          "marginHorizontal": 15,
+          "marginVertical": 10,
+          "width": 20,
+        }
+      }
+      testID="tickbox"
+    />
+  </View>
+  <Text
+    style={
+      {
+        "fontSize": 15,
+        "minWidth": "33%",
+        "padding": 10,
+      }
+    }
+  >
+    test name
+  </Text>
+  <Text
+    style={
+      {
+        "fontSize": 15,
+        "minWidth": "33%",
+        "padding": 10,
+      }
+    }
+  >
+    100
+  </Text>
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      {
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "opacity": 1,
+        "paddingLeft": 10,
+        "textAlign": "right",
+      }
+    }
+  >
+    <Text>
+      Remove
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`should render shopping list item, given ticked 1`] = `
+<View
+  style={
+    {
+      "borderColor": "grey",
+      "borderRadius": 30,
+      "borderWidth": 3,
+      "flexDirection": "row",
+      "marginBottom": 3,
+      "width": "100%",
+    }
+  }
+>
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      {
+        "opacity": 1,
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "borderColor": "black",
+          "borderWidth": 1,
+          "height": 20,
+          "marginHorizontal": 15,
+          "marginVertical": 10,
+          "width": 20,
+        }
+      }
+      testID="tickbox"
+    >
+      <View
+        style={
+          {
+            "backgroundColor": "black",
+            "height": 16,
+            "left": 12,
+            "position": "absolute",
+            "top": 0,
+            "transform": "rotate(45deg)",
+            "width": 1,
+          }
+        }
+      />
+      <View
+        style={
+          {
+            "backgroundColor": "black",
+            "height": 8,
+            "left": 4,
+            "position": "absolute",
+            "top": 8,
+            "transform": "rotate(315deg)",
+            "width": 1,
+          }
+        }
+      />
+    </View>
+  </View>
   <Text
     style={
       {

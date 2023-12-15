@@ -6,7 +6,7 @@ type Props = {
 };
 
 export const Tickbox = ({ticked}: Props): React.JSX.Element => (
-  <View style={tickStyles.box} testID='tickbox'>
+  <View style={tickStyles.box} testID="tickbox">
     {ticked && (
       <>
         <View style={tickStyles.stem} />

@@ -1,8 +1,8 @@
 import React, {useCallback, useState} from 'react';
+import Realm from 'realm';
 import {GroceryItem} from '../groceries/GroceryItem';
 import {View, TextInput, TouchableOpacity, Text, Alert} from 'react-native';
 import {styles} from '../styles';
-import uuid from 'react-native-uuid';
 
 type Props = {
   addGroceryItem: (groceryItem: GroceryItem) => void;
@@ -40,7 +40,7 @@ export const AddShoppingListItem = ({
     addGroceryItem({
       name: newGroceryName,
       quantity: newGroceryQuantity,
-      id: uuid.v4().toString(),
+      _id: new Realm.BSON.ObjectId(),
     });
     setNewGroceryQuantity(0);
     setNewGroceryName(undefined);

@@ -38,7 +38,7 @@ it('should call add grocery item', () => {
 
   // Then
   expect(addGroceryItem).toBeCalledWith({
-    id: expect.any(String),
+    _id: expect.any(String),
     name: groceryName,
     quantity: groceryQuantity,
   });
